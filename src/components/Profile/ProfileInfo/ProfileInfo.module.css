@@ -1,3 +1,13 @@
 .descBlock{
     padding: 10px;
+    text-align: center;
+}
+.mainImage {
+    text-align: center;
+    padding-top: 20px;
+}
+.mainImage img{
+    width: 20%;
+    
+    border-radius: 50%;
 }

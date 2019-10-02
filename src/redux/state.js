@@ -17,8 +17,17 @@ let state = {
             {id : 2, message:'hi, hello'},
             {id : 3, message:'hi, how are you?'},
         ]
-    }
+    },
+    sidebar : {
+        navigationData : [
+            {id : 1, nav: 'Profile'},
+            {id : 2, nav: 'Dialogs'},
+            {id : 3, nav: 'News'},
+            {id : 4, nav: 'Photo'},
+            {id : 5, nav: 'Settings'},
 
+        ]
+    }
 }
 
 export default state;
