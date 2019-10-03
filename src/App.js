@@ -16,11 +16,11 @@ const App = (props) => {
           <Route  path="/dialogs" 
           render={ () => <Dialogs  state={props.appState.messagePage}/> }/>
           <Route path="/profile" 
-          render={ () => <Profile state={props.appState.profilePage}/> } />
+          render={ () => <Profile state={props.appState.profilePage} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/> } />
         </div>
       </div> 
     </BrowserRouter>
   );
 }
 
-export default App;
+export default App; 
