@@ -19,7 +19,7 @@ const App = (props) => {
           render={ () => <Profile state={props.appState.profilePage} addPost={props.addPost} updateNewPostText={props.updateNewPostText}/> } />
         </div>
       </div> 
-    </BrowserRouter>
+    </BrowserRouter> 
   );
 }
 
