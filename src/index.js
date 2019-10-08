@@ -6,17 +6,22 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import StoreContext, {Provider} from './StoreContext';
 
 
 
-let rerenderEntireTree = (state) =>{
-    ReactDOM.render(<App appState={state} store={store} dispatch={store.dispatch.bind(store)} />, document.getElementById('root'));
+let rerenderEntireTree = () =>{
+    ReactDOM.render(
+        <Provider store={store}>
+            <App />
+        </Provider>, document.getElementById('root')
+    );
 };
 
-rerenderEntireTree(store.getState());
+rerenderEntireTree();
 store.subscribe(() => {
-    let state = store.getState()
-    rerenderEntireTree(state);
+  
+    rerenderEntireTree();
 });
 
 // If you want your app to work offline and load faster, you c  an change

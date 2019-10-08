@@ -3,7 +3,9 @@ import classes from './Header.module.css'
 import {NavLink} from 'react-router-dom'
 
 const Header = (props) =>{
-    let navigationElements = props.state.navigationData.map( nav => <li><NavLink to={'/' + nav.nav}  rel="noopener noreferrer" activeClassName={classes.active}>{nav.nav}</NavLink></li>)
+
+    let state = props.sidebar;
+    let navigationElements = state.navigationData.map( nav => <li><NavLink to={'/' + nav.nav}  rel="noopener noreferrer" activeClassName={classes.active}>{nav.nav}</NavLink></li>)
 
     return(
         <header className={classes.header}>
