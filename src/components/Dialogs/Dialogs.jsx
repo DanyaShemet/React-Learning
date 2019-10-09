@@ -5,6 +5,7 @@ import Message from './Message/Message';
 const Dialogs = (props) => {
    
     let state = props.messagePage;
+    
     let dialogsElement = state.dialogsData.map( dialog => <DialogItem name={dialog.name} id={dialog.id}/>);
     let messagesElement = state.messagesData.map( message => <Message message ={message.message} />);
 
@@ -27,7 +28,7 @@ const Dialogs = (props) => {
                 </div>
                 <div>
                     <div>
-                        <textarea  onChange={onChangeMessage} value={props.newMessageText} />
+                        <textarea  onChange={onChangeMessage} value={state.newMessageText} />
                     </div>
                     <div>
                         <button onClick={onAddMessage} >Add message</button>
