@@ -1,0 +1,13 @@
+.usersPhoto{
+    width: 100px;
+    height: 100px;
+}
+.users{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.user{
+    width: 20%;
+    margin-bottom: 30px;
+}

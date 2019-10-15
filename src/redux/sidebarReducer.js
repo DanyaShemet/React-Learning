@@ -5,6 +5,7 @@ let initialState = {
         {id : 3, nav: 'News'},
         {id : 4, nav: 'Photo'},
         {id : 5, nav: 'Settings'},
+        {id : 6, nav: 'Users'},
     ]
 };
 
