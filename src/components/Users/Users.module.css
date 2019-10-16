@@ -6,8 +6,12 @@
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+
 }
 .user{
     width: 20%;
     margin-bottom: 30px;
+}
+.selectedPage{
+    font-weight: bold;
 }

@@ -1,6 +1,3 @@
-import { stat } from "fs";
-
-
 const FOLLOW = 'FOLLOW';
 const UNFOLLOW = 'UNFOLLOW';
 const SET_USERS = 'SET_USERS';
@@ -29,7 +26,7 @@ const usersReducer = (state = initialState, action) =>{
             return {
                 ...state, 
                 usersData: state.usersData.map(u => {
-                    if(u.id === action.userId){
+                    if(u.id === action.userId){  
                         return {...u, followed: false};
                     }
                     return u;
