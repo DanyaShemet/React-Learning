@@ -14,4 +14,15 @@
 }
 .selectedPage{
     font-weight: bold;
+
+}
+.pages{
+    margin-bottom: 30px;
+}
+.pages span{
+    cursor: pointer;
+    margin-right: 10px;
+    padding: 5px 5px;
+
+    border-radius: 50% ;
 }
