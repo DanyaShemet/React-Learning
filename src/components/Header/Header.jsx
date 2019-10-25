@@ -13,7 +13,13 @@ const Header = (props) =>{
             <nav className={classes.nav}>
                 <ul>
                     {navigationElements}
+                    <li>
+                        {props.isAuth ? props.login :  <NavLink to={'/login'}>Login</NavLink>}
+                       
+                    </li>
+                    
                 </ul>
+             
             </nav>
         </header>
     )

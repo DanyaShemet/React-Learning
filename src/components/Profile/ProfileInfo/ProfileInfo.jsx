@@ -11,12 +11,18 @@ const ProfileInfo = (props) =>{
     return(
         <div>
           <div className={classes.mainImage}>
-            {/* <img src={props.profile.photos.large} alt=""/> */}
+            <img src={props.profile.photos.large} alt=""/>
              
             <img src="https://www.gettyimages.com/gi-resources/images/500px/983794168.jpg" alt=""/>
+          </div>  
+          <div classNam e={classes.descBlock}>
+            {/* Its my profile, welcome */}
+            {props.profile.aboutMe}
           </div>
-          <div className={classes.descBlock}>
-            Its my profile, welcome
+          <div>
+            {props.profile.lookingForAJob}
+            {props.profile.lookingForAJobDescription} 
+            {props.profile.fullName}
           </div>
      
        </div>
