@@ -2,6 +2,7 @@ import React from 'react';
 import classes from './Dialogs.module.css'
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
+import {Redirect} from 'react-router-dom'
 const Dialogs = (props) => {
    
     let state = props.messagePage;
@@ -16,7 +17,9 @@ const Dialogs = (props) => {
         let text = e.target.value;
         props.updateMessage(text);
     };
-    
+
+  
+
     return(
         <div className={classes.dialogs}>   
             <div className={classes.dialogs__items}>
