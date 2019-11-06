@@ -14,14 +14,14 @@ const ProfileInfo = (props) =>{
           <div className={classes.mainImage}>
             <img src={props.profile.photos.large} alt=""/>
           </div>  
-          <div classNam e={classes.descBlock}>
-            {props.profile.aboutMe}
-            <ProfileStatus status="Hello"/>
+          <div className={classes.descBlock}>
+            {/* {props.profile.aboutMe} */}
+            <ProfileStatus status={props.status} updateUserStatus={props.updateUserStatus}/>
           </div>
           <div>
-            {props.profile.lookingForAJob}
+            {/* {props.profile.lookingForAJob}
             {props.profile.lookingForAJobDescription} 
-            {props.profile.fullName}
+            {props.profile.fullName} */}
           </div>
      
        </div>
