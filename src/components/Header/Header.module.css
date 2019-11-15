@@ -7,7 +7,10 @@
   justify-content: space-between;
   align-items: center;
 }
-
+.logout{
+  display: flex;
+  flex-direction: column;
+}
 
 .header img{
   width: 55px;

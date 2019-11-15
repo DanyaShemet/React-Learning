@@ -4,6 +4,9 @@ import {addMessageActionCreator} from '../../redux/messageReducer'
 import { withAuthRedirect } from '../../hoc/withAuthRedirect';
 import Dialogs from './Dialogs';
 import { compose } from 'redux';
+
+
+
 let mapStateToProps = (state) =>{
     return{
         messagePage : state.messagePage
