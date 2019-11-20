@@ -1,7 +1,7 @@
 import React from 'react';
 import classes from './ProfileInfo.module.css'
 import Preloader from '../../common/Preloader/Proleader';
-import ProfileStatus from './ProfileStatus';
+import ProfileStatusHooks from './ProfileStatusHooks';
 
 const ProfileInfo = (props) =>{
 
@@ -17,7 +17,7 @@ const ProfileInfo = (props) =>{
           </div>  
           <div className={classes.descBlock}>
         
-            <ProfileStatus status={props.status} updateUserStatus={props.updateUserStatus}/>
+            <ProfileStatusHooks status={props.status} updateUserStatus={props.updateUserStatus}/>
           </div>
           <div>
            
