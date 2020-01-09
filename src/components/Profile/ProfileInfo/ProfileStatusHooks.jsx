@@ -8,16 +8,17 @@ const ProfileStatusHooks = (props) =>{
 
     let [editMode, setEditMode] = useState(false)
     let [status, updateUserStatus] = useState(props.status)
+
     const activateEditMode = () => {
         setEditMode(true);
-    }
+    };
     const deactivateEditMode = () =>{
         setEditMode(false);
         updateUserStatus(status)
-    }
+    };
     const onStatusChange = (e) => {
         updateUserStatus(e.currentTarget.value)
-    }
+    };
  
     return(
         <div>
